@@ -1,0 +1,24 @@
+
+@mixin dialogBox($backgroundColor, $width) {
+  width: $width;
+  padding: 10px;
+  background: $backgroundColor;
+  border: 1px solid black;
+  margin: 40px auto;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: black;
+    top: -5px;
+    right: -5px;
+  }
+
+}
+
+.dialog {
+  @include dialogBox(#008000, 400px)
+}

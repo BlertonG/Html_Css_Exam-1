@@ -1,0 +1,24 @@
+.dialog {
+  width: 400px;
+  padding: 10px;
+  background: #008000;
+  border: 1px solid black;
+  margin: 40px auto;
+}
+.dialog::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: black;
+  top: -5px;
+  right: -5px;
+}
+.dialog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 10px solid transparent;
+}
